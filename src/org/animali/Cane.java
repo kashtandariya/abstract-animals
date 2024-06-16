@@ -11,5 +11,5 @@ public class Cane extends Animale {
 	public void mangia() {
 		System.out.println("Il cane mangia crocchette");
 	}
-
+	
 }
