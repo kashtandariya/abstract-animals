@@ -1,7 +1,13 @@
 package org.animali;
 
 public class Main {
-	
+	public static void faiVolare(Fly animale) {
+        animale.vola();
+    }
+
+    public static void faiNuotare(Swim animale) {
+        animale.nuota();
+    }
 	
     public static void main(String[] args) {	     
     	Cane cane = new Cane();
@@ -12,21 +18,21 @@ public class Main {
         cane.dormi();
         cane.verso();
         cane.mangia();
-        cane.nuota();
+        faiNuotare(cane);
 
         passerotto.dormi();
         passerotto.verso();
         passerotto.mangia();
-        passerotto.vola();
+        faiVolare(passerotto);
 
         aquila.dormi();
         aquila.verso();
         aquila.mangia();
-        aquila.vola();
+        faiVolare(aquila);
 
         delfino.dormi();
         delfino.verso();
         delfino.mangia();
-        delfino.nuota();
+        faiNuotare(delfino);
     }
 }
