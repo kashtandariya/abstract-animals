@@ -12,4 +12,8 @@ public class Aquila extends Animale {
 		System.out.println("L'aquila mangia topi e piccoli animali.");
 	}
 
+	@Override
+    protected String tipoAnimale() {
+        return "L'aquila ";
+    }
 }

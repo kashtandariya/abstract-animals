@@ -11,5 +11,9 @@ public class Passerotto extends Animale {
 	public void mangia() {
 		System.out.println("Il passerotto mangia vermi e semi");
 	}
-
+	
+	@Override
+    protected String tipoAnimale() {
+        return "Il passerotto ";
+    }
 }

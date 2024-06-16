@@ -12,4 +12,8 @@ public class Delfino extends Animale {
 		System.out.println("Il delfino mangia altri pesci");
 	}
 
+	@Override
+    protected String tipoAnimale() {
+        return "Il delfino ";
+    }
 }
