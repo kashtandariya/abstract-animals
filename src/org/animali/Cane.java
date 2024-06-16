@@ -1,6 +1,6 @@
 package org.animali;
 
-public class Cane extends Animale {
+public class Cane extends Animale implements Swim{
 
 	@Override
 	public void verso() {
@@ -11,9 +11,14 @@ public class Cane extends Animale {
 	public void mangia() {
 		System.out.println("Il cane mangia crocchette");
 	}
-
-	 @Override
-	    protected String tipoAnimale() {
-	        return "Il cane ";
-	    }
+	
+	@Override
+	protected String tipoAnimale() {
+	     return "Il cane ";
+	}
+	 
+	@Override
+	public void nuota() {
+		System.out.println("Il cane nuota");
+	}
 }

@@ -1,6 +1,6 @@
 package org.animali;
 
-public class Passerotto extends Animale {
+public class Passerotto extends Animale implements Fly {
 
 	@Override
 	public void verso() {
@@ -16,4 +16,9 @@ public class Passerotto extends Animale {
     protected String tipoAnimale() {
         return "Il passerotto ";
     }
+	
+	@Override
+	public void vola() {
+		System.out.println("Il passerotto vola");
+	}
 }
